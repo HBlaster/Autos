@@ -1,0 +1,83 @@
+
+<div class="main-container">
+
+  <div class="logo-title" > 
+    <img src="https://www.designevo.com/res/templates/thumb_small/green-auto-and-car-wash.webp" alt="logo de venta de autos">
+    <h1>{{title}}</h1>
+  </div>
+
+  <div class="set-data" >
+
+    <h2>Ingresar datos</h2>
+
+    <form action="">
+
+      <label for="modelo">Modelo:</label>
+      <input type="text" id="modelo" name="modelo" [(ngModel)]="model.modelo" placeholder="Ingresa modelo del auto">
+
+      <label for="marca">Marca:</label>
+      <input type="text" id="marca" name="marca" [(ngModel)]="model.marca" placeholder="Ingresa marca del auto">
+
+      <label for="year">Año:</label>
+      <input type="number" id="year" name="year" [(ngModel)]="model.year" placeholder="Ingresa año del auto">
+      
+      <button type="submit" (click)="agregarAuto()">Guardar</button>
+    
+    </form>
+
+  </div>
+
+  <div class="show-data" >
+    <h2>Nuestros Autos</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Modelo</th>
+          <th>Marca</th>
+          <th>Año</th>
+          <th>opciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let auto of Autos; let i = index">
+          <td>{{auto.modelo}}</td>
+          <td>{{auto.marca}}</td>
+          <td>{{auto.year}}</td>
+          <td>
+            <a (click)="modificarAuto(i)" >
+              Modificar
+            </a>
+            <a (click)="eliminarAuto(i)">
+              Borrar
+            </a>
+          </td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
+ 
+  <div class="Edit-data">
+    <h2>Actualizar datos</h2>
+    <form action="">
+
+      <label for="modelo">Modelo:</label>
+      <input type="text" id="modelo" name="modelo" [(ngModel)]="model2.modelo" placeholder="Ingresa modelo del auto">
+
+      <label for="marca">Marca:</label>
+      <input type="text" id="marca" name="marca" [(ngModel)]="model2.marca" placeholder="Ingresa marca del auto">
+
+      <label for="year">Año:</label>
+      <input type="number" id="year" name="year" [(ngModel)]="model2.year" placeholder="Ingresa año del auto">
+      
+      <button type="submit" (click)="actualizarAuto()">Guardar</button>
+    
+    </form>
+  </div>
+
+
+
+
+
+
+</div>

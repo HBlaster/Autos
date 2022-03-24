@@ -117,3 +117,13 @@ body{
     text-align: center;
 }
   
+.table-container .modify {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.table-container .delete {
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 5px;
+}

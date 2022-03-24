@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(51 116 137);
+}
+
+.main-container{
+    width: 80%;
+    min-width: 320px;
+    height: auto;
+    margin: 200px auto;
+    display: grid;
+    place-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 50px;
+}    
+    
+    
+
+ 

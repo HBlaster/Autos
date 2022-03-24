@@ -45,7 +45,7 @@ export class AppComponent {
   myValue: any;
   
   modificarAuto(i: number):void{
-    this.model2.name = this.Autos[i].modelo;
+    this.model2.modelo = this.Autos[i].modelo;
     this.model2.marca = this.Autos[i].marca;
     this.model2.year = this.Autos[i].year;
     this.myValue = i;

@@ -8,7 +8,8 @@ html{
     font-family: 'Quicksand', sans-serif;
 }
 body{
-    background: rgb(51 116 137);
+    background: linear-gradient(rgb(51 116 137), rgb(28 81 96));
+    
 }
 
 .main-container{
@@ -73,7 +74,7 @@ body{
 }
 
 .button{
-    background-color:rgb(26 82 100);
+    background-color:rgb(22, 71, 87);
     border-radius: 8px;
     border: none;
     color: white;
@@ -110,7 +111,8 @@ body{
 
 .table-container thead{
     width: 100%;
-    background-color: rgb(26 82 100);
+    background-color: rgb(22, 71, 87);
+    border-radius: 4px;
 }
 
 .table-container td{

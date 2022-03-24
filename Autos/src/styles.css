@@ -59,10 +59,10 @@ body{
     flex-direction: column;
     color: white;
     font-size: 1rem;
-  }
+}
 
 
-  .input {
+.input {
     background-color: rgba(255, 255, 255, 0.753);
     border: none;
     border-radius: 8px;
@@ -70,10 +70,10 @@ body{
     font-size: 1rem;
     padding: 6px;
     margin-bottom: 12px;
-  }
+}
 
-  .button{
-    background-color:rgb(26 82 100);;
+.button{
+    background-color:rgb(26 82 100);
     border-radius: 8px;
     border: none;
     color: white;
@@ -83,9 +83,37 @@ body{
     font-weight: bold;
     height: 50px;
     margin-bottom: 30px;
-  }
+}
 
-  .show-data {
-      margin-bottom: 30px;
-  }
+.show-data h2{
+    text-align: center;
+    color: white;
+    margin-left: 5px;
+}
+.show-data {
+    margin-bottom: 30px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 900px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
+.table-container{
+    width: 100%;
+}
+
+.table-container table{
+    width: 100%;
+    color: white;
+}
+
+.table-container thead{
+    width: 100%;
+    background-color: rgb(26 82 100);
+}
+
+.table-container td{
+    text-align: center;
+}
+  

@@ -28,37 +28,39 @@
 
   </div>
 
-    <div class="show-data" >
-      <h2>Nuestros Autos</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Modelo</th>
-            <th>Marca</th>
-            <th>Año</th>
-            <th>opciones</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let auto of Autos; let i = index">
-            <td>{{auto.modelo}}</td>
-            <td>{{auto.marca}}</td>
-            <td>{{auto.year}}</td>
-            <td>
-              <a (click)="modificarAuto(i)" >
-                Modificar
-              </a>
-              <a (click)="eliminarAuto(i)">
-                Borrar
-              </a>
-            </td>
-
-          </tr>
-        </tbody>
-      </table>
-    </div>
   
-    <div class="Edit-data">
+  <div class="show-data" >
+      <h2>Nuestros Autos</h2>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Modelo</th>
+             <th>Marca</th>
+              <th>Año</th>
+              <th>opciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let auto of Autos; let i = index">
+              <td>{{auto.modelo}}</td>
+              <td>{{auto.marca}}</td>
+              <td>{{auto.year}}</td>
+              <td>
+                <a (click)="modificarAuto(i)" class="modify">
+                   Modificar
+                </a>
+                <a (click)="eliminarAuto(i)" class="delete">
+                  Borrar
+                </a>
+              </td>
+             </tr>
+          </tbody>
+        </table>
+      </div>
+  </div>
+  
+  <div class="Edit-data">
       <h2>Actualizar datos</h2>
       <form action="" class="formulario_1">
 
@@ -74,7 +76,7 @@
         <button type="submit" (click)="actualizarAuto()" class="button" >Guardar</button>
       
       </form>
-    </div>
+  </div>
 
 
 

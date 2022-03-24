@@ -28,7 +28,6 @@
 
   </div>
 
-  <div class="container-end" >
     <div class="show-data" >
       <h2>Nuestros Autos</h2>
       <table>
@@ -61,22 +60,21 @@
   
     <div class="Edit-data">
       <h2>Actualizar datos</h2>
-      <form action="">
+      <form action="" class="formulario_1">
 
         <label for="modelo">Modelo:</label>
-        <input type="text" id="modelo" name="modelo" [(ngModel)]="model2.modelo" placeholder="Ingresa modelo del auto">
+        <input type="text" id="modelo" name="modelo" [(ngModel)]="model2.modelo" placeholder="Ingresa modelo del auto" class="input" >
 
         <label for="marca">Marca:</label>
-        <input type="text" id="marca" name="marca" [(ngModel)]="model2.marca" placeholder="Ingresa marca del auto">
+        <input type="text" id="marca" name="marca" [(ngModel)]="model2.marca" placeholder="Ingresa marca del auto" class="input" >
 
         <label for="year">Año:</label>
-        <input type="number" id="year" name="year" [(ngModel)]="model2.year" placeholder="Ingresa año del auto">
+        <input type="number" id="year" name="year" [(ngModel)]="model2.year" placeholder="Ingresa año del auto" class="input" >
 
-        <button type="submit" (click)="actualizarAuto()">Guardar</button>
+        <button type="submit" (click)="actualizarAuto()" class="button" >Guardar</button>
       
       </form>
     </div>
-  </div>
 
 
 
